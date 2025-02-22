@@ -1,29 +1,53 @@
-# Application-of-python-syntax-using-online-shopping-system
+# Online Shopping Cart System
 
-# Elements used:
-"""Import Statement: import datetime
+## Description
+This program allows users to add, remove, and view products in their shopping cart, as well as calculate the total cost and apply discounts.
 
-Class Definition: class Product, class ShoppingCart
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Class Structure](#class-structure)
+- [Usage](#usage)
+- [Example](#example)
+- [Conclusion](#conclusion)
 
-List: self.products in ShoppingCart class
+## Overview
+The Online Shopping Cart System is designed to mimic a real-world online shopping experience. Users can manage their shopping cart by adding or removing products, view the current contents of their cart, calculate the total cost, and apply discount codes.
 
-Function Definitions: add_product, remove_product, view_cart, calculate_total, apply_discount, main
+## Features
+1. Add Product
+2. Remove Product
+3. View Cart
+4. Calculate Total
+5. Apply Discount
+6. Generate Receipt
+7. Exit
 
-Conditional Statements: if-elif-else statements in main function
+## Class Structure
 
-Loops: for loop in view_cart method, while loop in main function
+### `class Product`
+- **Attributes**:
+  - `name`
+  - `price`
+  - `quantity`
 
-Input/Output: input() function for user input, print() function for output
+### `class ShoppingCart`
+- **Attributes**:
+  - `products` (list of `Product` instances)
+  - `discount` (store discount percentage)
+- **Methods**:
+  - `add_product(self, name, price, quantity)`
+  - `remove_product(self, product_name)`
+  - `view_cart(self)`
+  - `calculate_total(self)`
+  - `apply_discount(self, discount_code)`
+  - `generate_receipt(self)`
 
-Variables: name, price, quantity, product, cart, choice
+## Usage
+1. Run the `main()` function to start the Online Shopping Cart System.
+2. Follow the on-screen prompts to add, remove, view, or manage products in your shopping cart.
 
-Operators: == for comparison, += for appending to list, * for multiplication
-
-String Formatting: f-strings for formatting product information and totals
-
-Modules: datetime module (not used in this example, but imported for demonstration purposes)
-
-Error Handling: try-except blocks (not used in this example, but can be added for robustness)
-
-This program demonstrates various Python syntax elements and data structures in a real-world context. You can modify and extend this program to learn more about Python programming."""
-
+## Example
+```python
+if __name__ == "__main__":
+    main()
